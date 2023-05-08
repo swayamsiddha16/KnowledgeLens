@@ -1,0 +1,2 @@
+swayam = {"rect":""
+          "square":""}
