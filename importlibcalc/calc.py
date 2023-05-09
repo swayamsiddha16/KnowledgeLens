@@ -7,10 +7,7 @@ module_name = (input("Enter the module name: ")).lower()
 module = importlib.import_module(module_name)
 class_ = getattr(module, class_name)
 
-# module = importlib.import_module("mymath")
 
-# l = []
-# l.append(int(input("Enter the noss : "))
 
 lst = list(map(int,input("Type number with space : ").split()))
 choice = int(input("Enter your choice: "))
