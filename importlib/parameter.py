@@ -9,10 +9,14 @@ def create_shape(shape_type):
     except (ImportError, AttributeError):
         return None
 
-shape_type = input("Enter the type of shape: ")
-if shape_class := create_shape(shape_type):
-    shape = shape_class(12, 10) if shape_type == 'rect' else shape_class(12)
-    shape.getArea()
-    shape.getPerimeter()
-else:
-    print("Invalid shape type")
+
+if __name__=='__main__':
+    shape_type = input("Enter the type of shape: ")
+    if shape_class := create_shape(shape_type):
+        shape = shape_class(12, 10) if shape_type == 'rect' else shape_class(12)
+        shape.getArea()
+        shape.getPerimeter()
+    else:
+        print("Invalid shape type")
+    
+    
