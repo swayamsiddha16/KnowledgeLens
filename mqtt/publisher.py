@@ -4,6 +4,6 @@ client = mqtt.Client()
 
 client.connect("localhost", 1883)
 
-client.publish("IOT", "Hello Aliva !")
+client.publish("swayam", "Hello Swayam!")
 
 client.disconnect()

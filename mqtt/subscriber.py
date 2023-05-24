@@ -1,8 +1,8 @@
 """"paho.mqtt used to create mqtt client"""
 import paho.mqtt.client as mqtt
 
-def on_message(message):
-    print("Received message:", message.payload.decode("utf-8"))
+def on_message(client,userdata,message):
+    print(f"Received message : , {message.payload.decode()}")
 
 
 client = mqtt.Client()
